@@ -1,1 +1,29 @@
 // Navigation code here
+.nav {
+  .flex-nav;
+  height: 120px;
+
+  @media @phone {
+    width: 85%;
+  }
+  h1 {
+    font-size: 4rem;
+    color: @nav-font;
+
+    @media @phone {
+      font-size: 3rem;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+
+      li {
+        a {
+          .links;
+        }
+      }
+    }
+  }
+}
