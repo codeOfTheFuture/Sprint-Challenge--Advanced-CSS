@@ -1,1 +1,27 @@
 // Mixins Here
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.links {
+  font-size: 1.6rem;
+  color: @nav-font;
+  text-decoration: none;
+  padding: 1em;
+}
+
+// Parametric Mixin
+.btn-styles(@bg, @color, @border, @bd-radius) {
+  background-color: @bg;
+  color: @color;
+  border: @border;
+  border-radius: @bd-radius;
+
+  &:hover {
+    background-color: @color;
+    color: @btn-bg-color;
+  }
+}
